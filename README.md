@@ -1,2 +1,2 @@
 # CodeWars-Python
-Repository for CodeWars solutions using Python
+Repository for CodeWars solutions
