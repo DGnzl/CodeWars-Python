@@ -2,16 +2,17 @@ class Song:
     def __init__(self, title, artist):
         self.title = title
         self.artist = artist
-    global listeners = set()
+        self.listeners = set()
+    
     def how_many(self, people):
-        global listeners
+        count = 0
         for p in people:
-            if p.lower() in listeners:
-                print('exists')
-            else:
-                listeners.add(p.lower())
-        return len(listeners)
+            if p.lower() not in self.listeners:
+                self.listeners.add(p.lower())
+                count += 1
+        return count
 
-test = Song("hi", 'bye')
-test.how_many('John')
-test.how_many('john')
+test = Song('hi', 'bye')
+test.how_many(['John'])
+test.how_many(['Sandra'])
+test.how_many(['John'])
