@@ -6,3 +6,4 @@ def TestF(list):
 print(lst)
 TestF(lst)
 print(lst)
+TestF(lst)
