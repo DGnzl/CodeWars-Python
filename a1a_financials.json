@@ -1,0 +1,132 @@
+[
+  {
+    "date": "2008-09-01",
+    "num_washes": 16945,
+    "profit": 253599
+  },
+  {
+    "date": "2008-10-01",
+    "num_washes": 16598,
+    "profit": 248390
+  },
+  {
+    "date": "2008-11-01",
+    "num_washes": 19473,
+    "profit": 292176
+  },
+  {
+    "date": "2008-12-01",
+    "num_washes": 18879,
+    "profit": 281769
+  },
+  {
+    "date": "2009-01-01",
+    "num_washes": 19476,
+    "profit": 292297
+  },
+  {
+    "date": "2009-02-01",
+    "num_washes": 16740,
+    "profit": 250976
+  },
+  {
+    "date": "2009-03-01",
+    "num_washes": 19150,
+    "profit": 286747
+  },
+  {
+    "date": "2009-04-01",
+    "num_washes": 19315,
+    "profit": 289248
+  },
+  {
+    "date": "2009-05-01",
+    "num_washes": 19614,
+    "profit": 293641
+  },
+  {
+    "date": "2009-06-01",
+    "num_washes": 17311,
+    "profit": 259859
+  },
+  {
+    "date": "2009-07-01",
+    "num_washes": 19457,
+    "profit": 292654
+  },
+  {
+    "date": "2009-08-01",
+    "num_washes": 16709,
+    "profit": 246846
+  },
+  {
+    "date": "2009-09-01",
+    "num_washes": 18122,
+    "profit": 277352
+  },
+  {
+    "date": "2009-10-01",
+    "num_washes": 18384,
+    "profit": 273233
+  },
+  {
+    "date": "2009-11-01",
+    "num_washes": 17347,
+    "profit": 267133
+  },
+  {
+    "date": "2009-12-01",
+    "num_washes": 18693,
+    "profit": 277989
+  },
+  {
+    "date": "2010-01-01",
+    "num_washes": 19200,
+    "profit": 279515
+  },
+  {
+    "date": "2010-02-01",
+    "num_washes": 19889,
+    "profit": 296233
+  },
+  {
+    "date": "2010-03-01",
+    "num_washes": 18109,
+    "profit": 272114
+  },
+  {
+    "date": "2010-04-01",
+    "num_washes": 16846,
+    "profit": 253220
+  },
+  {
+    "date": "2010-05-01",
+    "num_washes": 17404,
+    "profit": 259513
+  },
+  {
+    "date": "2010-06-01",
+    "num_washes": 17966,
+    "profit": 267432
+  },
+  {
+    "date": "2010-07-01",
+    "num_washes": 18284,
+    "profit": 268223
+  },
+  {
+    "date": "2010-08-01",
+    "num_washes": 18993,
+    "profit": 295574
+  },
+  {
+    "date": "2010-09-01",
+    "num_washes": 17390,
+    "profit": 263820
+  },
+  {
+    "date": "2010-10-01",
+    "num_washes": 16628,
+    "profit": 254804
+  }
+]
