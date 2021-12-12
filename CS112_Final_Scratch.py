@@ -1,3 +1,4 @@
+from typing import ByteString
 from requests.api import request
 
 
@@ -97,14 +98,38 @@ def Nemo_4():
         total += input.index('peter',idx)
         idx = min(input.index('peter',idx) + 1, len(input) - 1)
     print(total)
-Nemo_4()
+# Nemo_4()
+
+def Nemo_5():
+    import random
+    fib_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 
+    1597, 2584, 4181, 6765, 10946, 17711, 2985, 20696, 23681, 18705, 16714, 9747, 
+    789, 10536, 11325, 21861, 7514, 3703, 11217, 14920, 465, 15385, 15850, 5563, 
+    21413, 1304, 22717, 24021, 21066, 19415, 14809, 8552, 23361, 6241, 3930, 10171, 
+    14101, 24272, 12701, 11301, 24002, 9631, 7961, 17592, 25553, 17473, 17354, 9155, 
+    837, 9992, 10829, 20821, 5978, 1127, 7105, 8232, 15337, 23569, 13234, 11131, 
+    24365, 9824, 8517, 18341, 1186, 19527, 20713, 14568, 9609, 24177, 8114, 6619, 
+    14733, 21352, 10413, 6093, 16506, 22599, 13433, 10360, 23793, 8481, 6602, 15083]
+    random.seed(102274)
+    nemo_id = random.choice(fib_list)
+    import json
+    with open('customer_id_log.json','r') as j_file:
+        cust_id = json.load(j_file)
+    nemo_hash = cust_id[nemo_id]['id']
+    print(nemo_hash)
+# Nemo_5()
 
 import requests
 def Moira_2():
     api_url = 'http://ctf.kronoskoders.com:8888/moria/inside'
     response = requests.get(api_url)
-    print(type(response.content))
-    # print(response.content)
+    cubes = [x ** 3 for x in range(100)]
+    #print(cubes)
+    closing = response.content.index(b'}') + 1
+    print(closing)
+    for x in cubes:
+        if x < closing:
+            print(chr(response.content[x]), end='')
 # Moira_2()
 
 def Moira_3():
@@ -113,4 +138,11 @@ def Moira_3():
     response = requests.post(api_url, json=todo)
     print(response.json())
     print(response.status_code)
-# Moira_3()
+
+def Moria_5():
+    api_url = 'http://ctf.kronoskoders.com:8888/moria/bridge'
+    todo = {"username":"Bot"}
+    response = requests.post(api_url, json=todo)
+    print(response.text)
+    print(response.status_code)
+Moria_5()
