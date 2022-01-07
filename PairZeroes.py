@@ -1,12 +1,14 @@
 def pair_zeros(arr):
     zero_found = False
-    test = []
-    for i in range(len(arr)):
-        if arr[i] == 0 and zero_found:
-            arr.pop(i)
+    itr = 0
+    while (itr != len(arr)):
+        if arr[itr] == 0 and zero_found:
+            arr.pop(itr)
             zero_found = False
-        elif arr[i] == 0:
+            itr -= 1
+        elif arr[itr] == 0:
             zero_found = True
+        itr += 1
     return arr
 
-print(pair_zeros([1, 2, 0, 3, 0]))
+print(pair_zeros([1,0,1,0,2,0,0]))
