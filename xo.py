@@ -10,3 +10,4 @@ def xo2(s):
     return s.count('x') == s.count('o')
 
 print(xo2('xxoOOX'))
+print(xo('Xxoo'))
