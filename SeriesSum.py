@@ -1,6 +1,9 @@
 def series_sum(n):
     denom = 1
-    for x in range(n - 1):
-        n += (1 / denom)
+    ans = 0
+    for x in range(n):
+        ans += (1 / denom)
         denom += 3
-    return str(round(n ,2))
+    return (format(ans, '.2f'))
+
+series_sum(1)
