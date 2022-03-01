@@ -20,3 +20,4 @@ def rps(p1, p2):
             return 'Player 2 won!'
         else:
             return 'Draw!'
+# Refactor this
