@@ -9,3 +9,6 @@ def find_uniq(arr):
             return arr[1]
         else:
             return arr[0]
+
+def small_change():
+    pass
